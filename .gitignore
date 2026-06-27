@@ -1,0 +1,30 @@
+# ==========================================
+# Ignorar arquivos temporários do Quartus
+# ==========================================
+db/
+incremental_db/
+output_files/
+simulation/
+timing/
+greybox_tmp/
+
+# Ignorar relatórios e arquivos de log
+*.rpt
+*.smsg
+*.summary
+*.done
+*.pin
+*.jdi
+*.sld
+*.chm
+*.htm
+*.eqn
+
+# Ignorar arquivos de configuração de usuário locais
+*.qws
+*.bak
+*.qarlog
+
+# Ignorar binários de gravação (Opcional, mas recomendado)
+# *.sof
+# *.pof
