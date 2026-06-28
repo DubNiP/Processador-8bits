@@ -348,42 +348,6 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 616 360 744 456)
-	(text "MUX4BIT" (rect 5 0 61 19)(font "Intel Clear" (font_size 8)))
-	(text "inst15" (rect 8 75 36 92)(font "Intel Clear" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "A[3..0]" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
-		(text "A[3..0]" (rect 21 27 59 46)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "B[3..0]" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
-		(text "B[3..0]" (rect 21 43 59 62)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 48)(pt 16 48)(line_width 3))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "C" (rect 0 0 8 19)(font "Intel Clear" (font_size 8)))
-		(text "C" (rect 21 59 29 78)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 64)(pt 16 64))
-	)
-	(port
-		(pt 128 32)
-		(output)
-		(text "S[3..0]" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
-		(text "S[3..0]" (rect 69 27 107 46)(font "Intel Clear" (font_size 8)))
-		(line (pt 128 32)(pt 112 32)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 112 80))
-	)
-)
-(symbol
 	(rect 2048 328 2240 456)
 	(text "MEGAMUXFODASTICO" (rect 5 0 140 19)(font "Intel Clear" (font_size 8)))
 	(text "inst1" (rect 8 107 30 124)(font "Intel Clear" ))
@@ -564,26 +528,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "RA2[3..0]" (rect 744 376 787 393)(font "Intel Clear" ))
-	(pt 744 392)
-	(pt 768 392)
-	(bus)
-)
-(connector
-	(text "RA2[3..0]" (rect 856 392 899 409)(font "Intel Clear" ))
-	(pt 888 408)
-	(pt 856 408)
-	(bus)
-)
-(connector
-	(pt 616 424)
-	(pt 528 424)
-)
-(connector
-	(pt 528 424)
-	(pt 528 224)
-)
-(connector
 	(pt 528 224)
 	(pt 1088 224)
 )
@@ -594,16 +538,6 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 1088 48)
 	(pt 1080 48)
-)
-(connector
-	(pt 616 392)
-	(pt 584 392)
-	(bus)
-)
-(connector
-	(pt 616 408)
-	(pt 584 408)
-	(bus)
 )
 (connector
 	(pt 112 360)
@@ -729,6 +663,38 @@ refer to the applicable agreement for further details.
 	(text "MUXULA2[7..0]" (rect 1042 560 1115 577)(font "Intel Clear" ))
 	(pt 1032 576)
 	(pt 1096 576)
+	(bus)
+)
+(connector
+	(text "RA2[1..0]" (rect 856 392 899 409)(font "Intel Clear" ))
+	(pt 888 408)
+	(pt 856 408)
+	(bus)
+)
+(connector
+	(pt 528 424)
+	(pt 592 424)
+)
+(connector
+	(pt 528 224)
+	(pt 528 424)
+)
+(connector
+	(text "RD[3..2]" (rect 570 376 607 393)(font "Intel Clear" ))
+	(pt 592 392)
+	(pt 560 392)
+	(bus)
+)
+(connector
+	(text "RD[1..0]" (rect 570 392 607 409)(font "Intel Clear" ))
+	(pt 592 408)
+	(pt 560 408)
+	(bus)
+)
+(connector
+	(text "RA2[1..0]" (rect 720 376 763 393)(font "Intel Clear" ))
+	(pt 720 392)
+	(pt 744 392)
 	(bus)
 )
 (junction (pt -136 360))
