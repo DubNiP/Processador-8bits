@@ -25,11 +25,11 @@ begin
     op2 <= (Op & Funct(1) & Funct(0));
     process(op2) begin --- Main Decoder
     case (op2) is                       
-        when "101" => controls <= "111010";  --str
-        when "111" => controls <= "111010";  --str
-        when "100" => controls <= "111100";  --ldr
-        when "110" => controls <= "111100";  --ldr
-        when others => controls <= "000101";
+        when "101" => controls <= "101100";  --ldr
+        when "111" => controls <= "101100";  --ldr
+        when "100" => controls <= "101010";  --str
+        when "110" => controls <= "101010";  --str
+        when others => controls <= "010101";
     end case;
     end process;
     

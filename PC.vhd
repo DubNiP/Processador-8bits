@@ -1,4 +1,4 @@
-library IEEE; use IEEE.STD_LOGIC_1164.all;
+library IEEE; use IEEE.STD_LOGIC_1164.all;use IEEE.NUMERIC_STD.all;
 entity PC is
     Port ( clk : in  STD_LOGIC;
            reset : in  STD_LOGIC;
@@ -13,9 +13,12 @@ begin
     begin
         if(reset='1') then
                 pc_out <= (others=>'0');
-        elsif clk='1' then
-                pc_out<=pc_in;
+        elsif rising_edge(clk) then
+                pc_out <= std_logic_vector(unsigned(pc_in) + 1);         
         end if;
     end process;
 
 end Behavioral;
+
+
+   

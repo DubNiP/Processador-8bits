@@ -51,6 +51,14 @@ set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_B8 -to CLK
+set_global_assignment -name BDF_FILE Segmento7.bdf
+set_global_assignment -name BDF_FILE Segmento6.bdf
+set_global_assignment -name BDF_FILE Segmento5.bdf
+set_global_assignment -name BDF_FILE Segmento4.bdf
+set_global_assignment -name BDF_FILE Segmento3.bdf
+set_global_assignment -name BDF_FILE Segmento2.bdf
+set_global_assignment -name BDF_FILE Segmento1.bdf
 set_global_assignment -name VHDL_FILE datamemory.vhd
 set_global_assignment -name BDF_FILE 1bit.bdf
 set_global_assignment -name BDF_FILE MUX8BIT.bdf
@@ -70,4 +78,58 @@ set_global_assignment -name VHDL_FILE PC.vhd
 set_global_assignment -name VHDL_FILE instruction_memory.vhd
 set_global_assignment -name BDF_FILE MUX2BIT.bdf
 set_global_assignment -name BDF_FILE MUX4BIT.bdf
+set_global_assignment -name VHDL_FILE CLK_GLOBAL.vhd
+set_location_assignment PIN_N20 -to 56
+set_location_assignment PIN_N19 -to 55
+set_location_assignment PIN_M20 -to 54
+set_location_assignment PIN_N18 -to 53
+set_location_assignment PIN_L18 -to 52
+set_location_assignment PIN_K20 -to 51
+set_location_assignment PIN_J20 -to 50
+set_location_assignment PIN_F20 -to 46
+set_location_assignment PIN_F19 -to 45
+set_location_assignment PIN_H19 -to 44
+set_location_assignment PIN_J18 -to 43
+set_location_assignment PIN_E19 -to 42
+set_location_assignment PIN_E20 -to 41
+set_location_assignment PIN_F18 -to 40
+set_location_assignment PIN_E17 -to 36
+set_location_assignment PIN_D19 -to 35
+set_location_assignment PIN_C20 -to 34
+set_location_assignment PIN_C19 -to 33
+set_location_assignment PIN_E21 -to 32
+set_location_assignment PIN_E22 -to 31
+set_location_assignment PIN_F21 -to 30
+set_location_assignment PIN_B22 -to 26
+set_location_assignment PIN_C22 -to 25
+set_location_assignment PIN_B21 -to 24
+set_location_assignment PIN_A21 -to 23
+set_location_assignment PIN_B19 -to 22
+set_location_assignment PIN_A20 -to 21
+set_location_assignment PIN_B20 -to 20
+set_location_assignment PIN_B17 -to 16
+set_location_assignment PIN_A18 -to 15
+set_location_assignment PIN_A17 -to 14
+set_location_assignment PIN_B16 -to 13
+set_location_assignment PIN_E18 -to 12
+set_location_assignment PIN_D18 -to 11
+set_location_assignment PIN_C18 -to 10
+set_location_assignment PIN_C17 -to 06
+set_location_assignment PIN_D17 -to 05
+set_location_assignment PIN_E16 -to 04
+set_location_assignment PIN_C16 -to 03
+set_location_assignment PIN_C15 -to 02
+set_location_assignment PIN_E15 -to 01
+set_location_assignment PIN_C14 -to 00
+set_location_assignment PIN_A8 -to CLK_PC
+set_location_assignment PIN_A9 -to CLK_REG
+set_location_assignment PIN_A10 -to CLK_MEM
+set_instance_assignment -name IO_STANDARD "2.5 V SCHMITT TRIGGER" -to CLK
+set_location_assignment PIN_B11 -to REGW
+set_location_assignment PIN_A11 -to MEMW
+set_location_assignment PIN_D14 -to MEMREG
+set_location_assignment PIN_E14 -to ALUSRC
+set_location_assignment PIN_C13 -to REGSRC
+set_location_assignment PIN_A7 -to RESET
+set_instance_assignment -name IO_STANDARD "2.5 V SCHMITT TRIGGER" -to RESET
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
