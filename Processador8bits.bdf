@@ -348,49 +348,6 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 2048 328 2240 456)
-	(text "MEGAMUXFODASTICO" (rect 5 0 140 19)(font "Intel Clear" (font_size 8)))
-	(text "inst1" (rect 8 107 30 124)(font "Intel Clear" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "SLTR[1..0]" (rect 0 0 62 19)(font "Intel Clear" (font_size 8)))
-		(text "SLTR[1..0]" (rect 21 27 83 46)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "SUM[7..0]" (rect 0 0 59 19)(font "Intel Clear" (font_size 8)))
-		(text "SUM[7..0]" (rect 21 43 80 62)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 48)(pt 16 48)(line_width 3))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "AND[7..0]" (rect 0 0 57 19)(font "Intel Clear" (font_size 8)))
-		(text "AND[7..0]" (rect 21 59 78 78)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 64)(pt 16 64)(line_width 3))
-	)
-	(port
-		(pt 0 80)
-		(input)
-		(text "OR[7..0]" (rect 0 0 48 19)(font "Intel Clear" (font_size 8)))
-		(text "OR[7..0]" (rect 21 75 69 94)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 80)(pt 16 80)(line_width 3))
-	)
-	(port
-		(pt 192 32)
-		(output)
-		(text "RESULT[7..0]" (rect 0 0 79 19)(font "Intel Clear" (font_size 8)))
-		(text "RESULT[7..0]" (rect 92 27 171 46)(font "Intel Clear" (font_size 8)))
-		(line (pt 192 32)(pt 176 32)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 176 112))
-	)
-)
-(symbol
 	(rect 2368 424 2496 520)
 	(text "MUX8BIT" (rect 5 0 61 19)(font "Intel Clear" (font_size 8)))
 	(text "inst2" (rect 8 75 30 92)(font "Intel Clear" ))
@@ -460,6 +417,49 @@ refer to the applicable agreement for further details.
 	)
 	(drawing
 		(rectangle (rect 16 16 112 80))
+	)
+)
+(symbol
+	(rect 2064 304 2224 416)
+	(text "dmem" (rect 5 0 35 12)(font "Arial" ))
+	(text "inst1" (rect 8 96 30 113)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 14 12)(font "Arial" ))
+		(text "clk" (rect 21 27 35 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "we" (rect 0 0 12 12)(font "Arial" ))
+		(text "we" (rect 21 43 33 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "a[7..0]" (rect 0 0 31 12)(font "Arial" ))
+		(text "a[7..0]" (rect 21 59 52 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "wd[7..0]" (rect 0 0 38 12)(font "Arial" ))
+		(text "wd[7..0]" (rect 21 75 59 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 160 32)
+		(output)
+		(text "rd[7..0]" (rect 0 0 35 12)(font "Arial" ))
+		(text "rd[7..0]" (rect 110 27 145 39)(font "Arial" ))
+		(line (pt 160 32)(pt 144 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 144 96))
 	)
 )
 (connector
@@ -662,22 +662,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1080 0)
-	(pt 2136 0)
-)
-(connector
-	(pt 2136 0)
-	(pt 2136 192)
-)
-(connector
-	(pt -136 320)
-	(pt 888 320)
-)
-(connector
-	(pt 888 320)
-	(pt 2000 320)
-)
-(connector
 	(text "RD[5..4]" (rect 866 376 903 393)(font "Intel Clear" ))
 	(pt 888 392)
 	(pt 856 392)
@@ -731,6 +715,58 @@ refer to the applicable agreement for further details.
 	(text "RA2[1..0]" (rect 720 376 763 393)(font "Intel Clear" ))
 	(pt 720 392)
 	(pt 744 392)
+	(bus)
+)
+(connector
+	(text "RESULT[7..0]" (rect 2032 352 2093 369)(font "Intel Clear" ))
+	(pt 2064 368)
+	(pt 2032 368)
+	(bus)
+)
+(connector
+	(pt 2064 336)
+	(pt 2056 336)
+)
+(connector
+	(pt 2056 336)
+	(pt 2056 320)
+)
+(connector
+	(pt -136 320)
+	(pt 888 320)
+)
+(connector
+	(pt 888 320)
+	(pt 2056 320)
+)
+(connector
+	(pt 2064 352)
+	(pt 2008 352)
+)
+(connector
+	(pt 1080 0)
+	(pt 2008 0)
+)
+(connector
+	(pt 2008 0)
+	(pt 2008 352)
+)
+(connector
+	(text "MUXULA1[7..0]" (rect 2032 368 2105 385)(font "Intel Clear" ))
+	(pt 2064 384)
+	(pt 2032 384)
+	(bus)
+)
+(connector
+	(text "DMEM[7..0]" (rect 2224 320 2279 337)(font "Intel Clear" ))
+	(pt 2224 336)
+	(pt 2256 336)
+	(bus)
+)
+(connector
+	(text "DMEM[7..0]" (rect 2344 440 2399 457)(font "Intel Clear" ))
+	(pt 2368 456)
+	(pt 2344 456)
 	(bus)
 )
 (junction (pt -136 360))
