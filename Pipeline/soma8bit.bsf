@@ -1,0 +1,155 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 16 16 192 336)
+	(text "soma8bit" (rect 5 0 60 15)(font "Intel Clear" (font_size 8)))
+	(text "inst" (rect 8 303 28 316)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "WB7" (rect 0 0 29 15)(font "Intel Clear" (font_size 8)))
+		(text "WB7" (rect 21 27 50 42)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "WA7" (rect 0 0 29 15)(font "Intel Clear" (font_size 8)))
+		(text "WA7" (rect 21 43 50 58)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "WB6" (rect 0 0 29 15)(font "Intel Clear" (font_size 8)))
+		(text "WB6" (rect 21 59 50 74)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "WA6" (rect 0 0 29 15)(font "Intel Clear" (font_size 8)))
+		(text "WA6" (rect 21 75 50 90)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "WB5" (rect 0 0 29 15)(font "Intel Clear" (font_size 8)))
+		(text "WB5" (rect 21 91 50 106)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 96)(pt 16 96))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "WA5" (rect 0 0 29 15)(font "Intel Clear" (font_size 8)))
+		(text "WA5" (rect 21 107 50 122)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 112)(pt 16 112))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "WB4" (rect 0 0 29 15)(font "Intel Clear" (font_size 8)))
+		(text "WB4" (rect 21 123 50 138)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 128)(pt 16 128))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "WA4" (rect 0 0 29 15)(font "Intel Clear" (font_size 8)))
+		(text "WA4" (rect 21 139 50 154)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 144)(pt 16 144))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "WB3" (rect 0 0 29 15)(font "Intel Clear" (font_size 8)))
+		(text "WB3" (rect 21 155 50 170)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 160)(pt 16 160))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "WA3" (rect 0 0 29 15)(font "Intel Clear" (font_size 8)))
+		(text "WA3" (rect 21 171 50 186)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 176)(pt 16 176))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "SOMA_SUB" (rect 0 0 68 15)(font "Intel Clear" (font_size 8)))
+		(text "SOMA_SUB" (rect 21 187 89 202)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 192)(pt 16 192))
+	)
+	(port
+		(pt 0 208)
+		(input)
+		(text "WB2" (rect 0 0 29 15)(font "Intel Clear" (font_size 8)))
+		(text "WB2" (rect 21 203 50 218)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 208)(pt 16 208))
+	)
+	(port
+		(pt 0 224)
+		(input)
+		(text "WA2" (rect 0 0 29 15)(font "Intel Clear" (font_size 8)))
+		(text "WA2" (rect 21 219 50 234)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 224)(pt 16 224))
+	)
+	(port
+		(pt 0 240)
+		(input)
+		(text "WB1" (rect 0 0 28 15)(font "Intel Clear" (font_size 8)))
+		(text "WB1" (rect 21 235 49 250)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 240)(pt 16 240))
+	)
+	(port
+		(pt 0 256)
+		(input)
+		(text "WA1" (rect 0 0 28 15)(font "Intel Clear" (font_size 8)))
+		(text "WA1" (rect 21 251 49 266)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 256)(pt 16 256))
+	)
+	(port
+		(pt 0 272)
+		(input)
+		(text "WB0" (rect 0 0 29 15)(font "Intel Clear" (font_size 8)))
+		(text "WB0" (rect 21 267 50 282)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 272)(pt 16 272))
+	)
+	(port
+		(pt 0 288)
+		(input)
+		(text "WA0" (rect 0 0 29 15)(font "Intel Clear" (font_size 8)))
+		(text "WA0" (rect 21 283 50 298)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 288)(pt 16 288))
+	)
+	(port
+		(pt 176 32)
+		(output)
+		(text "SUM[7..0]" (rect 0 0 56 15)(font "Intel Clear" (font_size 8)))
+		(text "SUM[7..0]" (rect 99 27 155 42)(font "Intel Clear" (font_size 8)))
+		(line (pt 176 32)(pt 160 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 160 304))
+	)
+)
